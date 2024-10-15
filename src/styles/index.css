@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    @apply text-violet-600 underline underline-offset-4;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    z-index: -1;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dacaf4;
+    opacity: 10px;
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #dab5db;
+    opacity: 10px;
+    border-radius: 10px;
+}
+
+.home {
+    background: linear-gradient(155deg, #fefcfe 0%, #fdfcfe 10%, #fffeff 20%, #f9f5fb 30%, #f2eff4 40%, #fcfafd 50%, #fcfbfc 60%, #f6f2f7 70%, #e3d0f0 80%, #d8a2f1 90%, #e3d0f0 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.rec.rec-arrow {
+    background-color: #d8a2f1;
+    color: #68128f;
+}
+
+.rec.rec-arrow:hover {
+    background-color: #68128f;
+    color: #d8a2f1;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 2px lightpink;
+    background-color: #eaeaea;
+}
