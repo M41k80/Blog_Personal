@@ -36,7 +36,8 @@ DJANGO_APPS = [
 ]
 
 PROJECTS_APPS = [
-    
+    'apps.blog',
+    'apps.category',
 ]
 
 THIRD_PARTY_APPS = [
@@ -53,15 +54,19 @@ INSTALLED_APPS = DJANGO_APPS + PROJECTS_APPS + THIRD_PARTY_APPS
 #CKEditor 
 
 CKEDITOR_CONFIGS = {
+    # 'default': {
+    #      'toolbar': 'Custom',
+    #     'toolbar_Custom': [
+    #         ['Bold', 'Italic', 'Underline'],
+    #         ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+    #         ['Link', 'Unlink'],
+    #         ['RemoveFormat', 'Source']
+    #     ],
+    #     'autoParagraph': False,
+    # }
     'default': {
-         'toolbar': 'Custom',
-        'toolbar_Custom': [
-            ['Bold', 'Italic', 'Underline'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink'],
-            ['RemoveFormat', 'Source']
-        ],
-        'autoParagraph': False,
+        'toolbar': 'full',
+        'autoParagraph': False
     }
 }
 
